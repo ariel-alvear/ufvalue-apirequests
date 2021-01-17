@@ -57,7 +57,7 @@ class UfvaluerequestsController < ApplicationController
 
     #Bring my requests count and detail
     def my_requests
-      name = params[:name]
+      name = params[:name].downcase!
       detail = []
       (Ufvaluerequest.where(client: name)).each do |consult|
         hash1 = {}

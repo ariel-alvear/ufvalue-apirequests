@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Las consulstas de uf se hacen en localhost:3000/uf/<fecha que desees buscar>
+Se debe agregar en key = X-CLIENT y en Value el nombre del cliente 
 
-Things you may want to cover:
+El nombre del cliente siempre se guardará en minúsculas. 
 
-* Ruby version
+Para consultar las consultas que ha hecho el cliente debe ir a localhost:3000/cliente/<nombre de cliente>
 
-* System dependencies
+Esta búsqueda transforma cualquier mayúscula a minúscula para que coincida con el nombre guardado.
 
-* Configuration
+El nombre del cliente debe ser exacto al que se ingresó en el Value de X-CLIENT.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Cuando el cliente revisa sus consultas primero aparece la cantidad de consultas que ha hecho y luego el detalle de cada una.
