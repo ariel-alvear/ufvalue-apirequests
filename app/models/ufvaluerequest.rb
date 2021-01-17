@@ -1,0 +1,2 @@
+class Ufvaluerequest < ApplicationRecord
+end
